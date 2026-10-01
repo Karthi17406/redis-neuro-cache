@@ -1,0 +1,23 @@
+{
+  "snapshots": 250,
+  "warmup_fraction": 0.15,
+  "horizon_seconds": 0.734,
+  "horizon_ms": 734,
+  "min_accesses": 1,
+  "log_span_seconds": 14.687,
+  "log_rows": 20830,
+  "dataset_rows": 33298,
+  "feature_names": [
+    "total_accesses",
+    "get_count",
+    "set_count",
+    "age_seconds",
+    "recency_seconds",
+    "mean_interval_seconds",
+    "ewma_interval_seconds",
+    "accesses_per_minute",
+    "get_ratio",
+    "value_size",
+    "recency_over_mean_interval"
+  ]
+}

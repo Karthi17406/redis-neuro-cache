@@ -1,0 +1,169 @@
+{
+  "selected_model": "random_forest",
+  "trained_at": "2026-09-22T08:36:46.087963+00:00",
+  "dataset_settings": {
+    "snapshots": 250,
+    "warmup_fraction": 0.15,
+    "horizon_seconds": 0.956,
+    "horizon_ms": 956,
+    "min_accesses": 1,
+    "log_span_seconds": 19.127,
+    "log_rows": 12353,
+    "dataset_rows": 50364,
+    "feature_names": [
+      "total_accesses",
+      "get_count",
+      "set_count",
+      "age_seconds",
+      "recency_seconds",
+      "mean_interval_seconds",
+      "ewma_interval_seconds",
+      "accesses_per_minute",
+      "get_ratio",
+      "value_size",
+      "recency_over_mean_interval"
+    ]
+  },
+  "split_sizes": {
+    "train_rows": 30171,
+    "validation_rows": 7672,
+    "test_rows": 12521
+  },
+  "validation_roc_auc": {
+    "logistic_regression": 0.8876073781553276,
+    "decision_tree": 0.8912514293469315,
+    "random_forest": 0.9029249970295746,
+    "gradient_boosting": 0.9009753487388499
+  },
+  "baselines": {
+    "baseline_always_keep": {
+      "accuracy": 0.5119399408992892,
+      "precision": 0.5119399408992892,
+      "recall": 1.0,
+      "f1": 0.6771961333262903,
+      "brier": 0.24990693232787647,
+      "confusion_matrix": {
+        "true_negative": 0,
+        "false_positive": 6111,
+        "false_negative": 0,
+        "true_positive": 6410
+      },
+      "positive_rate": 0.5119399408992892,
+      "n": 12521,
+      "roc_auc": 0.5,
+      "average_precision": 0.5119399408992892,
+      "eviction_regret_at_50": 0.522258064516129,
+      "eviction_regret_at_100": 0.5190322580645161,
+      "eviction_regret_at_150": 0.5138709677419355
+    },
+    "baseline_lru": {
+      "roc_auc": 0.8569255563546057,
+      "average_precision": 0.8248481664895495,
+      "eviction_regret_at_50": 0.0,
+      "eviction_regret_at_100": 0.25,
+      "eviction_regret_at_150": 0.40096774193548385
+    },
+    "baseline_lfu": {
+      "roc_auc": 0.8855387627385312,
+      "average_precision": 0.8842536268753083,
+      "eviction_regret_at_50": 0.0,
+      "eviction_regret_at_100": 0.24467741935483872,
+      "eviction_regret_at_150": 0.36301075268817207
+    }
+  },
+  "test": {
+    "logistic_regression": {
+      "accuracy": 0.8043287277374012,
+      "precision": 0.7344860255802937,
+      "recall": 0.9675507020280811,
+      "f1": 0.8350612629594723,
+      "brier": 0.12465708472239202,
+      "confusion_matrix": {
+        "true_negative": 3869,
+        "false_positive": 2242,
+        "false_negative": 208,
+        "true_positive": 6202
+      },
+      "positive_rate": 0.5119399408992892,
+      "n": 12521,
+      "roc_auc": 0.8864414979151939,
+      "average_precision": 0.8854547244666534,
+      "eviction_regret_at_50": 0.0,
+      "eviction_regret_at_100": 0.23548387096774193,
+      "eviction_regret_at_150": 0.3603225806451613
+    },
+    "decision_tree": {
+      "accuracy": 0.8085616164843064,
+      "precision": 0.7354217998357386,
+      "recall": 0.9778471138845554,
+      "f1": 0.8394830241746467,
+      "brier": 0.1209716227770237,
+      "confusion_matrix": {
+        "true_negative": 3856,
+        "false_positive": 2255,
+        "false_negative": 142,
+        "true_positive": 6268
+      },
+      "positive_rate": 0.5119399408992892,
+      "n": 12521,
+      "roc_auc": 0.8900790906452165,
+      "average_precision": 0.8666238287727283,
+      "eviction_regret_at_50": 0.0,
+      "eviction_regret_at_100": 0.23548387096774193,
+      "eviction_regret_at_150": 0.3632258064516129
+    },
+    "random_forest": {
+      "accuracy": 0.8004951681175625,
+      "precision": 0.7362889586856729,
+      "recall": 0.9508580343213728,
+      "f1": 0.8299291938997821,
+      "brier": 0.12244810602883616,
+      "confusion_matrix": {
+        "true_negative": 3928,
+        "false_positive": 2183,
+        "false_negative": 315,
+        "true_positive": 6095
+      },
+      "positive_rate": 0.5119399408992892,
+      "n": 12521,
+      "roc_auc": 0.888880987738282,
+      "average_precision": 0.8864632582843064,
+      "eviction_regret_at_50": 0.0,
+      "eviction_regret_at_100": 0.23290322580645162,
+      "eviction_regret_at_150": 0.36333333333333334
+    },
+    "gradient_boosting": {
+      "accuracy": 0.800894497244629,
+      "precision": 0.7476919185531807,
+      "recall": 0.9223088923556942,
+      "f1": 0.8258713417615422,
+      "brier": 0.12631531978705335,
+      "confusion_matrix": {
+        "true_negative": 4116,
+        "false_positive": 1995,
+        "false_negative": 498,
+        "true_positive": 5912
+      },
+      "positive_rate": 0.5119399408992892,
+      "n": 12521,
+      "roc_auc": 0.8888013507776443,
+      "average_precision": 0.8856156174798013,
+      "eviction_regret_at_50": 0.0,
+      "eviction_regret_at_100": 0.23241935483870968,
+      "eviction_regret_at_150": 0.36301075268817207
+    }
+  },
+  "feature_importance": {
+    "mean_interval_seconds": 0.2396714469078166,
+    "recency_over_mean_interval": 0.22315142650871045,
+    "ewma_interval_seconds": 0.1634493928465127,
+    "get_count": 0.08207964119427007,
+    "total_accesses": 0.07943148015745706,
+    "accesses_per_minute": 0.07588495959963051,
+    "get_ratio": 0.04994666122812102,
+    "recency_seconds": 0.03614986889018801,
+    "age_seconds": 0.02272606686072804,
+    "value_size": 0.01854170393302083,
+    "set_count": 0.008967351873544643
+  }
+}

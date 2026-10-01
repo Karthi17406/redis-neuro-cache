@@ -1,0 +1,19 @@
+INFO:     Started server process [25352]
+INFO:     Waiting for application startup.
+INFO:miniredis.ml:Loaded random_forest with 11 features from D:\REPO_GITHUB\Karthi\mini reddis\src\models\eviction_model.joblib
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61107 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61107 - "POST /evict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61107 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59284 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59284 - "POST /evict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60392 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60392 - "POST /evict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64481 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64481 - "POST /evict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64486 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64486 - "POST /evict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64486 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63597 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63597 - "POST /evict HTTP/1.1" 200 OK

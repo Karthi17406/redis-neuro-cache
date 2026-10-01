@@ -1,0 +1,8 @@
+key,total_accesses,get_count,set_count,delete_count
+age,3,1,1,1
+name,6,5,1,0
+product1,51,50,1,0
+product2,6,5,1,0
+user1,101,100,1,0
+user2,35,34,1,0
+user3,11,10,1,0
