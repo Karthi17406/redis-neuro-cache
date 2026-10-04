@@ -462,7 +462,7 @@ Redis-NeuroCache/
 
 ---
 
-# 🛠️ Running the ML Service
+#  Running the ML Service
 
 From the project root:
 
